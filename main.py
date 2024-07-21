@@ -1,6 +1,6 @@
-from bot._argument_parser import get_cli_args
-from bot._get_webdriver import get_webdriver
-from bot._setup_logger import setup_logger
+from bot.setup._argument_parser import get_cli_args
+from bot.setup._get_webdriver import get_webdriver
+from bot.setup._setup_logger import setup_logger
 
 def main() -> None:
     args = get_cli_args()
