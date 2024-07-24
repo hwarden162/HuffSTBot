@@ -25,5 +25,8 @@ def get_cli_args():
         choices=["chrome", "firefox", "safari", "edge", "safari"],
         default="firefox",
     )
+    
+    room_args = parser.add_argument_group("Room Settings", description="Arguments for the settings of the clocktower.live room")
+    room_args.add_argument("--room-name", type=str, default="huffgame")
 
     return parser.parse_args()
